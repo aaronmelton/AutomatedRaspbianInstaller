@@ -1,0 +1,23 @@
+###########################################
+# DESCRIPTION OF OPTIONS USED IN THS FILE #
+###########################################
+# Select English and United States as the language, location
+# debian-installer/locale=en_US
+#
+# Select American English as the keymap (keymap=us alias is broken, reported bug)
+# keyboard-configuration/xkb-keymap=us
+#
+# Allow additional time for slow DHCP responses
+# netcfg/dhcp_timeout=60
+#
+# Set installation hostname as "raspbian"
+# netcfg/get_hostname=raspbian
+#
+# No configured domain name
+# netcfg/get_domain=unassigned-domain
+#
+# Download remaining details from preseed.cfg file
+# This file must be accessible on the web via HTTP (HTTPS WILL NOT WORK)
+# preseed/url=http://host/path/to/preseed.cfg
+#
+dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p3 rootwait debian-installer/locale=en_US keyboard-configuration/xkb-keymap=us netcfg/dhcp_timeout=60 netcfg/get_hostname=raspbian netcfg/get_domain=unassigned-domain preseed/url=http://host/path/to/preseed.cfg
