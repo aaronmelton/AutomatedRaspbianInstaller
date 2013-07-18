@@ -1,6 +1,6 @@
-###########################################
-# DESCRIPTION OF OPTIONS USED IN THS FILE #
-###########################################
+############################################
+# DESCRIPTION OF OPTIONS USED IN THIS FILE #
+############################################
 # Select English and United States as the language, location
 # debian-installer/locale=en_US
 #
@@ -20,4 +20,7 @@
 # This file must be accessible on the web via HTTP (HTTPS WILL NOT WORK)
 # preseed/url=http://host/path/to/preseed.cfg
 #
+# If you don't have any web hosting, I have the preseed.cfg file available on my website.
+# Remove the hash on the next line and delete the last line to use it.
+# dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p3 rootwait debian-installer/locale=en_US keyboard-configuration/xkb-keymap=us netcfg/dhcp_timeout=60 netcfg/get_hostname=raspbian netcfg/get_domain=unassigned-domain preseed/url=http://aaronmelton.com/projects/AutomatedRaspbianInstaller/preseed.txt
 dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p3 rootwait debian-installer/locale=en_US keyboard-configuration/xkb-keymap=us netcfg/dhcp_timeout=60 netcfg/get_hostname=raspbian netcfg/get_domain=unassigned-domain preseed/url=http://host/path/to/preseed.cfg
