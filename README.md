@@ -1,6 +1,11 @@
 # Automated Raspbian Installer #
 ---
 
+2014-01-10: It appears that due to inactivity from the original author, the
+rpi_installer_08-19-12.zip installer image (which this script was created for)
+is no longer endorsed by the Raspberry Pi Foundation.  Please look at [hifi's raspbian-ua-netinst] (https://github.com/hifi/raspbian-ua-netinst) 
+for instructions on how to create an unattended installation with a more recent installer image.
+
 ## About ##
 Automated Raspbian Installer uses a custom cmdline.txt and preseed.cfg file 
 to create an unattended, automated Raspberry Pi install using the Raspbian 
@@ -22,8 +27,7 @@ These files were built with the Raspbian Installer in mind.  They may work for
 other Debian-based network installations on a Raspberry Pi, but that's outside 
 the scope of this project.
 
-[Download the Raspbian Installer](http://www.raspbian.org/RaspbianInstaller) 
-and follow their instructions for copying these files onto your SD Card.
+[Download the (old) Raspbian Installer image](http://archive.raspbian.org/installer/rpi_installer_08-19-12.zip), rpi_installer_08-19-12.zip, and follow their instructions for copying these files onto your SD Card.
 
 ## Requirements ##
 1. Both files are required to complete a fully automated installation.
